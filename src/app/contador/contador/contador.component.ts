@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 
+
 @Component({
-  selector: 'app-contador',
+  selector: 'app-contador', //Nombre del componente
   template: `
 
 <h1>{{ title }}</h1>
