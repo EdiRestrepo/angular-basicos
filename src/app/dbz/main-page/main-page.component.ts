@@ -12,11 +12,26 @@ import { DbzService } from '../services/dbz.service';
 
 export class MainPageComponent {
 
+//   public personajes: Personaje[] = [{
+//     nombre: 'Mestro Roshi',
+//     poder: 1000
+//   },
+// {nombre: 'Mestro Roshi',
+// poder: 1000}];
+
+// onNuevoPersonaje(personaje: Personaje):void{
+  // }
+
+  // onDelete(index:number): void{
+  //   this._personajes.splice(index,1)
+  //   console.log(index)
+  // }
+
   constructor() {}
 
   nuevo: Personaje = {
     nombre: 'Mestro Roshi',
     poder: 1000
   }
-  
+
 }

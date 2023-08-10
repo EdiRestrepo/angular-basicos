@@ -1,18 +1,25 @@
-<h1>Dragon Ball Z</h1>
+<h1>Dragon Ball Z Personajes</h1>
 <hr>
 
 <div class="row">
   <div class="col">
-    <app-personajes>
+    <!-- <app-personajes [personajeList]="personajes"> -->
+      <!-- <app-personajes (onDelete)="onDelete($even)" > -->
+        <app-personajes >
 
     </app-personajes>
 
   </div>
 
   <div class="col">
-    <app-agregar
+    <!-- <app-agregar
       [nuevo]="nuevo"
-    ></app-agregar>
+      (onNuevoPersonaje)="onNuevoPersonaje($event)"
+
+    > -->
+    <app-agregar
+    [nuevo]="nuevo"
+  ></app-agregar>
   </div>
 
 </div>

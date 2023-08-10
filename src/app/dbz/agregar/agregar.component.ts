@@ -16,6 +16,8 @@ export class AgregarComponent {
     poder: 0
   }
 
+  
+
   constructor(private dbzService: DbzService){}
 
   // @Output()        //Quiere decir que vamos a emitir un nuevo personaje
@@ -25,15 +27,14 @@ export class AgregarComponent {
     if(this.nuevo.nombre.trim().length === 0){ return; }
 
     // this.onNuevoPersonaje.emit( this.nuevo ); //this.nuevo es de tipo personaje, es lo que va a emitir
-    
+
     this.dbzService.agregarPersonaje( this.nuevo );
-    
+
     this.nuevo = {
       nombre: '',
       poder: 0
     }
-
-    
   }
+
 
 }
